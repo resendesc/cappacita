@@ -69,11 +69,11 @@ function batalhaPokemon(id1, id2) {
   if (pokemon1.hp < 0) pokemon1.hp = 0;
   if (pokemon2.hp < 0) pokemon2.hp = 0;
 
-  return `${pokemon1.nome}: ${pokemon1.hp} / ${pokemon2.nome}: ${pokemon2.hp}`;
+  return `${pokemon1.nome}: hp = ${pokemon1.hp} X ${pokemon2.nome}: hp = ${pokemon2.hp}`;
 }
 
 function curarPokemon(id) {
-  pokemon = pokemons[id];
+  let pokemon = pokemons[id];
   pokemon.hp = pokemon.hp + 20;
   if (pokemon.hp > 100) {
     pokemon.hp = 100;

@@ -19,6 +19,7 @@ app.post("/pokemons", (req, res) => {
     tipo: req.body.tipo,
     fraqueza: req.body.fraqueza,
     resistencia: req.body.resistencia,
+    imagem: req.body.imagem,
     hp: 100,
   });
   res.send(pokemon);
